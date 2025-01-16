@@ -1,8 +1,15 @@
+import Header from "../shared/Header";
+import Navbar from "../shared/Navbar";
+import Estates from "./estate/Estates";
+import Slider from "./Slider";
+
 const Home = () => {
     return (
         <div>
-            <h1 className="text-2xl">this is home page
-            </h1>
+            <Header></Header>
+            <Navbar></Navbar>
+            <Slider></Slider>
+            <Estates></Estates>
         </div>
     );
 };
