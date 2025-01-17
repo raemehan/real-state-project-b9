@@ -22,7 +22,7 @@
       "area": "3000 sq ft",
       "location": "Miami, Florida, USA",
       "facilities": ["Living Room", "Swimming Pool", "Kitchen"],
-      "image": "https://example.com/palm-grove.jpg",
+      "image": "https://cf.bstatic.com/xdata/images/hotel/max1280x900/53531513.jpg?k=d2ee42afc03fff50b0b8df17bf9abed851bb950888c976ee216c215172318218&o=&hp=1",
       "button": "View Property"
     },
     {
@@ -35,7 +35,7 @@
       "area": "600 sq ft",
       "location": "San Francisco, California, USA",
       "facilities": ["Living Room", "Kitchen"],
-      "image": "https://example.com/skyline-studio.jpg",
+      "image": "https://cdn.prod.website-files.com/62bc621399f5713af580f208/6407b66382be2b71bc2bbee8_Skyline%20Web%20Res07.JPG",
       "button": "View Property"
     },
     {
@@ -48,7 +48,7 @@
       "area": "2500 sq ft",
       "location": "Malibu, California, USA",
       "facilities": ["Living Room", "Swimming Pool", "Kitchen"],
-      "image": "https://example.com/beachfront-bliss.jpg",
+      "image": "https://pictures.escapia.com/DaveStubbs/259072/4496430957.jpg",
       "button": "View Property"
     },
     {
@@ -61,7 +61,7 @@
       "area": "1800 sq ft",
       "location": "Chicago, Illinois, USA",
       "facilities": ["Living Room", "Kitchen"],
-      "image": "https://example.com/urban-escape.jpg",
+      "image": "https://a0.muscache.com/im/pictures/miso/Hosting-37924431/original/33725f3f-8eb8-4b45-83d0-e99fc8ba74b3.jpeg?im_w=720&im_format=avif",
       "button": "View Property"
     },
     {
@@ -74,7 +74,7 @@
       "area": "1500 sq ft",
       "location": "Austin, Texas, USA",
       "facilities": ["Living Room", "Swimming Pool", "Kitchen"],
-      "image": "https://example.com/greenview-residences.jpg",
+      "image": "https://live.staticflickr.com/5314/5908623878_8d00592c74_c.jpg",
       "button": "View Property"
     },
     {
@@ -87,7 +87,7 @@
       "area": "3200 sq ft",
       "location": "Denver, Colorado, USA",
       "facilities": ["Living Room", "Swimming Pool", "Kitchen"],
-      "image": "https://example.com/hillside-manor.jpg",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpA5Idsu5sd6wd9pXlb78TL2cfL7Ch6ZwpbA&s",
       "button": "View Property"
     },
     {
@@ -100,7 +100,7 @@
       "area": "1000 sq ft",
       "location": "Seattle, Washington, USA",
       "facilities": ["Living Room", "Kitchen"],
-      "image": "https://example.com/city-central-loft.jpg",
+      "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/437898058.jpg?k=f821d05cebd9d35eac73533b13a7a81ccb10156ce7edf01a0b6eeb96b05378e7&o=&hp=1",
       "button": "View Property"
     },
     {
@@ -113,7 +113,7 @@
       "area": "2800 sq ft",
       "location": "Santa Monica, California, USA",
       "facilities": ["Living Room", "Swimming Pool", "Kitchen"],
-      "image": "https://example.com/coastal-retreat.jpg",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt7AKcg7MVJW0nntovz8L0VNP5dLmncSGPcg&s",
       "button": "View Property"
     },
     {
@@ -126,7 +126,7 @@
       "area": "2000 sq ft",
       "location": "Charlotte, North Carolina, USA",
       "facilities": ["Living Room", "Kitchen"],
-      "image": "https://example.com/suburban-dream.jpg",
+      "image": "https://img.freepik.com/premium-psd/suburban-dream-homes_666026-3683.jpg",
       "button": "View Property"
     },
     {
@@ -139,7 +139,7 @@
       "area": "1400 sq ft",
       "location": "Boston, Massachusetts, USA",
       "facilities": ["Living Room", "Swimming Pool", "Kitchen"],
-      "image": "https://example.com/downtown-elegance.jpg",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrIBgaO6a8AaXpV1UPtTLsXqPPBvoIs10nRA&s",
       "button": "View Property"
     },
     {
@@ -152,7 +152,7 @@
       "area": "1800 sq ft",
       "location": "Portland, Oregon, USA",
       "facilities": ["Living Room", "Kitchen"],
-      "image": "https://example.com/riverside-bliss.jpg",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgXVrIUkVqR56f6NGHwhsZXamB5RbQsH6tWA&s",
       "button": "View Property"
     },
     {
@@ -165,7 +165,7 @@
       "area": "4000 sq ft",
       "location": "Los Angeles, California, USA",
       "facilities": ["Living Room", "Swimming Pool", "Kitchen"],
-      "image": "https://example.com/luxury-penthouse.jpg",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPEYyjTMKdokHPCt4o7fZoR68Z4S_KOI06lQ&s",
       "button": "View Property"
     },
     {
@@ -178,7 +178,7 @@
       "area": "1200 sq ft",
       "location": "Asheville, North Carolina, USA",
       "facilities": ["Living Room", "Kitchen"],
-      "image": "https://example.com/forest-edge-cabin.jpg",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl7zG625TfCc41oXEA5lJwOlxBOmCY-FBeEw&s",
       "button": "View Property"
     }
 ]

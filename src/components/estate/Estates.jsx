@@ -6,7 +6,7 @@ const Estates = () => {
     const [data , setData] = useState([]);
 
     useEffect(() => {
-        fetch("/state.json")
+        fetch("/data/state.json")
             .then((response) => {
                 console.log("Response:", response);
                 if (!response.ok) {
@@ -21,6 +21,7 @@ const Estates = () => {
 
     return (
         <div>
+            <h1 className="text-4xl text-center my-16">Apartments</h1>
             {
                 data.map(item => <Estate key={item.id} data={item}></Estate>)
             }

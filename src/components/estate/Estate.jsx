@@ -1,9 +1,9 @@
 const Estate = ({data}) => {
 
-    const [estate_title, segment_name, description, price, status, area, location, facilities, image, id] = data;
+    const {estate_title, segment_name, description, price, status, area, location, facilities, image, id} = data;
 
     return (
-        <div className="flex flex-col lg:flex-row border rounded-lg shadow-lg overflow-hidden bg-white max-w-5xl mx-auto my-5">
+        <div className="flex flex-col lg:flex-row border rounded-lg shadow-lg overflow-hidden my-16  bg-white max-w-5xl mx-auto my-5">
         {/* Image Section */}
         <div className="lg:w-1/3 relative">
           <img
@@ -19,7 +19,7 @@ const Estate = ({data}) => {
         {/* Content Section */}
         <div className="lg:w-2/3 p-6 flex flex-col">
           {/* Title and Name */}
-          <h2 className="text-2xl font-bold text-gray-800">{title}</h2>
+          <h2 className="text-2xl font-bold text-gray-800">{estate_title}</h2>
           <p className="text-sm text-gray-500 mt-1">by {segment_name}</p>
   
           {/* Description */}
@@ -43,7 +43,7 @@ const Estate = ({data}) => {
             <strong className="text-gray-800">Facilities:</strong>
             <ul className="list-disc list-inside text-gray-600 mt-2">
               {facilities.map((facility, index) => (
-                <li key={index}>{facility}</li>
+                <li key={id}>{facility}</li>
               ))}
             </ul>
           </div>
@@ -51,7 +51,6 @@ const Estate = ({data}) => {
           {/* View Button */}
           <div className="mt-auto flex justify-end">
             <button
-              onClick={onViewClick}
               className="px-6 py-2 bg-blue-600 text-white font-semibold rounded-md shadow hover:bg-blue-700 transition duration-300"
             >
               View

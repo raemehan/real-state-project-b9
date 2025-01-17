@@ -1,7 +1,7 @@
 const Slider = () => {
 
 return (
-    <div className="w-11/12 mx-auto h-96">
+    <div className="w-11/12 mx-auto h-4/6">
 <div className="carousel w-full ">
   <div id="slide1" className="carousel-item relative w-full">
     <img
