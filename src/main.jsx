@@ -7,7 +7,7 @@ import {
 } from "react-router-dom";
 import Root from './root/Root';
 import Home from './components/Home';
-
+import AuthContext from './athuntication/AuthContext';
 
 
 const router = createBrowserRouter([
@@ -25,6 +25,8 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+    <AuthContext>
     <RouterProvider router={router} />
+    </AuthContext>
   </StrictMode>,
 )

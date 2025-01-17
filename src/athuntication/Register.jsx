@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 
 const Register = () => {
 
@@ -16,9 +16,15 @@ const Register = () => {
         setFormData({...formData, [name] : value})
     }
 
+    const {stateRegister} = useContext(AuthProvider)
+
     const handleSubmit = (e) => {
     e.preventDefault();
     // Add authentication logic here
+    stateRegister(formData.email, formData.password)
+    .then(user => console.log(user.user))
+    .catch(error =>  console.error(error.messege))
+
     console.log("User Data: ", formData);
     }
 
