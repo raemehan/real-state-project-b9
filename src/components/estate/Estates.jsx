@@ -17,13 +17,13 @@ const Estates = () => {
             .then((data) => setData(data))
             .catch((error) => console.error("Error:", error));
     }, []);
-    
+
 
     return (
         <div>
             <h1 className="text-4xl text-center my-16">Apartments</h1>
             {
-                data.map(item => <Estate key={item.id} data={item}></Estate>)
+                data.map(item => <Estate key={item.id} estateData={item}></Estate>)
             }
         </div>
     );

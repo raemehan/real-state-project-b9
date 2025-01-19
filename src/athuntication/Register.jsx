@@ -1,6 +1,15 @@
 import { useContext, useState } from "react";
+import { AuthProvider } from "./AuthContext";
+import { Link, useNavigate } from "react-router-dom";
+import { updateProfile } from "firebase/auth";
+
+
 
 const Register = () => {
+
+    let navigateHome = useNavigate()
+
+    const {stateRegister} = useContext(AuthProvider)
 
     const [formData, setFormData] = useState(
         {
@@ -10,22 +19,53 @@ const Register = () => {
             photoURL: ""
         }
     )
+    const [email, setEmail] = useState()
+    const [password, setPassword] = useState()
+    const [error , setError] = useState()
 
     const handleChange = (e) => {
         const {name, value} = e.target;
         setFormData({...formData, [name] : value})
+        setEmail(formData.email)
+        setPassword(formData.password)
     }
-
-    const {stateRegister} = useContext(AuthProvider)
 
     const handleSubmit = (e) => {
     e.preventDefault();
     // Add authentication logic here
-    stateRegister(formData.email, formData.password)
-    .then(user => console.log(user.user))
-    .catch(error =>  console.error(error.messege))
 
-    console.log("User Data: ", formData);
+    if (formData.password.length < 6) {
+      alert("Password must be at least 6 characters long.");
+      return;
+    }
+
+    const hasUpperCase = /[A-Z]/.test(formData.password);
+    const hasLowerCase = /[a-z]/.test(formData.password);
+  
+    if (!hasUpperCase || !hasLowerCase ) {
+      alert(
+        "Password must include at least one uppercase letter, one lowercase letter"
+      );
+      return;
+    }
+
+    if (!formData.email.includes("@")) {
+      alert("Please enter a valid email address.");
+      return;
+    }
+
+    stateRegister(email, password)
+    .then((userCredential) => {
+      console.log(userCredential.user);
+      navigateHome("/"); // Navigates to the home page
+
+      updateProfile(user, {
+        displayName:formData.name,
+        photoURL:formData.photoURL,
+      })
+    })
+    .catch((error) => setError(error.message));
+   
     }
 
     return (
@@ -114,6 +154,7 @@ const Register = () => {
           >
             Register
           </button>
+          <h2 className="text-xl">{error}</h2>
           <p className="mt-4 text-sm text-center text-gray-600">
             Already have an account?{" "}
             <Link

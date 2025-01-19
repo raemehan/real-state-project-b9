@@ -8,6 +8,8 @@ import {
 import Root from './root/Root';
 import Home from './components/Home';
 import AuthContext from './athuntication/AuthContext';
+import Login from './athuntication/Login';
+import Register from './athuntication/Register';
 
 
 const router = createBrowserRouter([
@@ -17,7 +19,15 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Home></Home>
+        element: <Home></Home>,
+      },
+      {
+        path: "/login",
+        element: <Login></Login>
+      },
+      {
+        path: "/Register",
+        element: <Register></Register>
       }
     ]
   },

@@ -1,6 +1,6 @@
-const Estate = ({data}) => {
+const Estate = ({estateData}) => {
 
-    const {estate_title, segment_name, description, price, status, area, location, facilities, image, id} = data;
+    const {estate_title, segment_name, description, price, status, area, location, facilities, image, id} = estateData;
 
     return (
         <div className="flex flex-col lg:flex-row border rounded-lg shadow-lg overflow-hidden my-16  bg-white max-w-5xl mx-auto my-5">
